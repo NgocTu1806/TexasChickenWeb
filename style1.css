@@ -1,0 +1,244 @@
+/* Reset một số thuộc tính mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Định dạng cho body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  
+  
+  body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.menu-section h1 {
+  color: #84261e;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.menu-item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  transition: transform 0.3s ease;
+  background-color: #fff;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.menu-item h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.price {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.price .current {
+  color: #c8102e;
+  font-weight: bold;
+}
+
+.price .old {
+  color: #888;
+  text-decoration: line-through;
+  margin-left: 8px;
+}
+
+button {
+  background-color: #84261e;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #a62e24;
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Style cho navigation bar */
+/* Định dạng cho phần header */
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #2a2723;
+  padding: 0 20px;
+  height: 70px;
+}
+
+.header .logo img {
+  height: 70px;
+}
+
+.header .nav-menu {
+  margin-left: auto; /* Đẩy phần menu chữ nghiêng sang phải */
+  margin-right: 20px; /* Tạo khoảng cách với phần icon cuối */
+}
+
+.header .nav-menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header .nav-menu ul li {
+  margin: 0 15px;
+}
+
+.header .nav-menu ul li a {
+  color: #f6a623;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.header .nav-menu ul li a.active,
+.header .nav-menu ul li a:hover {
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .benefits-row {
+      flex-direction: column;
+  }}
+
+  .footer {
+      background-color: #2b2b2b;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+  }
+  .footer h3 {
+      color: #f5a623;
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+  .footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+  .footer ul li {
+      margin-bottom: 8px;
+      font-size: 14px;
+  }
+  .footer ul li i {
+      margin-right: 8px;
+      color: #f5a623;
+  }
+  .footer a {
+      color: #fff;
+      text-decoration: none;
+  }
+  .footer a:hover {
+      text-decoration: underline;
+  }
+  .footer .social-icons {
+      display: flex;
+      gap: 10px;
+  }
+  .footer .social-icons a {
+      color: #f5a623;
+      font-size: 20px;
+  }
+  .footer .newsletter {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+  }
+  .footer .newsletter input {
+      padding: 8px;
+      border: none;
+      border-radius: 4px;
+      width: 200px;
+  }
+  .footer .newsletter button {
+      padding: 8px 16px;
+      background-color: #a94442;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  }
+  .footer .newsletter button:hover {
+      background-color: #8a3a38;
+  }
+  .footer .map-button {
+      background-color: #f5a623;
+      color: #000;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+  }
+  .footer .map-button:hover {
+      background-color: #e69520;
+  }
+  @media (max-width: 768px) {
+      .footer {
+          flex-direction: column;
+          gap: 20px;
+      }
+      .footer .newsletter input {
+          width: 150px;
+      }
+  }
